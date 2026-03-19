@@ -7,32 +7,8 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <div class="container">
-      <aside class="sidebar">
-        <img src="{{ '/images/photo.jpg' | relative_url }}" alt="Profile Photo">
-        <h2>Yulin (Jason) Liu</h2>
-        <p><strong>Mechanical Engineering @ UC San Diego</strong></p>
-        <p>San Diego, CA</p>
-        <p>
-          <a href="mailto:yul202@ucsd.edu">Email</a> |
-          <a href="https://www.linkedin.com/in/yulin-liu-473862230/" target="_blank">LinkedIn</a> |
-          <a href="https://github.com/yulinliu2002" target="_blank">GitHub</a>
-        </p>
-        <hr>
-        <h2>About Me</h2>
-        <p>
-          I’m a mechanical engineer passionate about robotics, automation, and control systems.
-          With hands-on experience at Trane Technologies and research labs at UC San Diego, I’ve led
-          efforts in robotic integration, workflow optimization, and precision biomechanical system design.
-          I thrive at the intersection of mechanical design, embedded systems, and human-centered engineering.
-        </p>
-      </aside>
-
-      <main class="main-content">
-        <div class="content-inner">
-          {{ content }}
-        </div>
-      </main>
-    </div>
+    <main class="wrapper">
+      {{ content }}
+    </main>
   </body>
 </html>
