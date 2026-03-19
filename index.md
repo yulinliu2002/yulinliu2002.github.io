@@ -3,8 +3,8 @@ layout: default
 title: Home
 ---
 
-<section class="hero">
-  <p class="eyebrow">ENGINEER. BUILDER. SYSTEM THINKER.</p>
+<section class="hero hero-glow">
+  <div class="hero-badge">Built for Reality</div>
   <h1>I build systems that work outside the lab.</h1>
   <p class="hero-subtext">
     Mechanical engineering, robotics, and automation grounded in real-world execution.
@@ -33,29 +33,46 @@ title: Home
 <section id="work" class="selected-work">
   <p class="section-label">SELECTED WORK</p>
 
-  <div class="work-item">
-    <h3><a href="/bioreactor">Cellxercise Machine</a></h3>
-    <p>Designed a dual-mode tissue loading system with actuator integration, modular fixturing, and force feedback for repeatable cyclic testing.</p>
-  </div>
+  <div class="work-grid">
+    <a href="/bioreactor" class="work-card">
+      <div class="work-card-inner">
+        <p class="work-tag">Biomechanics</p>
+        <h3>Cellxercise Machine</h3>
+        <p>Designed a dual-mode tissue loading system with actuator integration, modular fixturing, and force feedback for repeatable cyclic testing.</p>
+      </div>
+    </a>
 
-  <div class="work-item">
-    <h3><a href="/autonomous-vehicle">Autonomous Vehicle Robot</a></h3>
-    <p>Built a lane-following robotic platform integrating ROS2, Jetson Nano, computer vision, LiDAR, and AI-assisted autonomy workflows.</p>
-  </div>
+    <a href="/autonomous-vehicle" class="work-card">
+      <div class="work-card-inner">
+        <p class="work-tag">Robotics</p>
+        <h3>Autonomous Vehicle Robot</h3>
+        <p>Built a lane-following robotic platform integrating ROS2, Jetson Nano, computer vision, LiDAR, and AI-assisted autonomy workflows.</p>
+      </div>
+    </a>
 
-  <div class="work-item">
-    <h3><a href="/boomerang">Boomerang Aerodynamics Research</a></h3>
-    <p>Combined UWB tracking, prototyping, and MATLAB simulation to study how geometry affects rotational stability and flight performance.</p>
-  </div>
+    <a href="/boomerang" class="work-card">
+      <div class="work-card-inner">
+        <p class="work-tag">Research</p>
+        <h3>Boomerang Aerodynamics</h3>
+        <p>Combined UWB tracking, prototyping, and MATLAB simulation to study how geometry affects rotational stability and flight performance.</p>
+      </div>
+    </a>
 
-  <div class="work-item">
-    <h3><a href="/robotic-lift">Robotic Lift Mechanism</a></h3>
-    <p>Developed a compact lifting robot with a four-bar linkage, torque-enhancing drivetrain, and laser-cut structural components.</p>
-  </div>
+    <a href="/robotic-lift" class="work-card">
+      <div class="work-card-inner">
+        <p class="work-tag">Mechanism Design</p>
+        <h3>Robotic Lift Mechanism</h3>
+        <p>Developed a compact lifting robot with a four-bar linkage, torque-enhancing drivetrain, and laser-cut structural components.</p>
+      </div>
+    </a>
 
-  <div class="work-item">
-    <h3><a href="/xtreme-materials">Xtreme Materials Laboratory</a></h3>
-    <p>Synthesized carbon-lithium composite materials through controlled solvothermal processing, purification, and validation workflows.</p>
+    <a href="/xtreme-materials" class="work-card">
+      <div class="work-card-inner">
+        <p class="work-tag">Materials</p>
+        <h3>Xtreme Materials Laboratory</h3>
+        <p>Synthesized carbon-lithium composite materials through controlled solvothermal processing, purification, and validation workflows.</p>
+      </div>
+    </a>
   </div>
 </section>
 
