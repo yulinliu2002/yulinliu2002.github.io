@@ -93,16 +93,50 @@ title: Home
   </div>
 </section>
 
-<section class="philosophy">
-  <p class="section-label">APPROACH</p>
-  <p class="philosophy-text">
-    I care about systems that survive contact with reality. My work sits between design, controls, fabrication, and testing, with a focus on turning ideas into robust, testable engineering outcomes.
-  </p>
+<section class="founder-section">
+  <h2 class="founder-heading">Meet the Founder</h2>
+
+  <div class="founder-card">
+    <div class="founder-photo-wrap">
+      <img src="/images/photo.jpg" alt="Yulin Jason Liu" class="founder-photo">
+    </div>
+
+    <div class="founder-content">
+      <h3>Yulin (Jason) Liu</h3>
+      <p class="founder-role">Mechanical Engineer • Robotics • Automation</p>
+
+      <p class="founder-text">
+        I build engineering systems that survive contact with reality. My work sits at the intersection of
+        <span class="highlight">mechanical design</span>,
+        <span class="highlight">controls</span>,
+        <span class="highlight">fabrication</span>, and
+        <span class="highlight">testing</span>, with a focus on turning ideas into robust, testable outcomes.
+      </p>
+
+      <p class="founder-text founder-text-secondary">
+        From robotics integration and production automation to research platforms and mechanism design, I care about solutions that are clear, reliable, and built for the real world.
+      </p>
+    </div>
+  </div>
 </section>
 
 <section id="contact" class="contact">
   <p class="section-label">CONTACT</p>
-  <p><span class="highlight-plain">Email:</span> <a href="mailto:yul202@ucsd.edu">yul202@ucsd.edu</a></p>
-  <p><a href="https://www.linkedin.com/in/yulin-liu-473862230/" target="_blank">LinkedIn</a></p>
-  <p><a href="/Jason_CV.pdf" target="_blank">Resume</a></p>
+
+  <div class="contact-grid">
+    <a class="contact-card" href="mailto:yul202@ucsd.edu">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">yul202@ucsd.edu</span>
+    </a>
+
+    <a class="contact-card" href="https://www.linkedin.com/in/yulin-liu-473862230/" target="_blank">
+      <span class="contact-label">LinkedIn</span>
+      <span class="contact-value">Connect with me</span>
+    </a>
+
+    <a class="contact-card" href="/Jason_CV_OL.pdf" target="_blank">
+      <span class="contact-label">Resume</span>
+      <span class="contact-value">Open PDF</span>
+    </a>
+  </div>
 </section>
