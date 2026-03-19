@@ -35,37 +35,27 @@ title: Home
 
   <div class="work-item">
     <h3><a href="/bioreactor">Cellxercise Machine</a></h3>
-    <p>
-      Designed a dual-mode tissue loading system with actuator integration, modular fixturing, and force feedback for repeatable cyclic testing.
-    </p>
+    <p>Designed a dual-mode tissue loading system with actuator integration, modular fixturing, and force feedback for repeatable cyclic testing.</p>
   </div>
 
   <div class="work-item">
     <h3><a href="/autonomous-vehicle">Autonomous Vehicle Robot</a></h3>
-    <p>
-      Built a lane-following robotic platform integrating ROS2, Jetson Nano, computer vision, LiDAR, and AI-assisted autonomy workflows.
-    </p>
+    <p>Built a lane-following robotic platform integrating ROS2, Jetson Nano, computer vision, LiDAR, and AI-assisted autonomy workflows.</p>
   </div>
 
   <div class="work-item">
     <h3><a href="/boomerang">Boomerang Aerodynamics Research</a></h3>
-    <p>
-      Combined UWB tracking, prototyping, and MATLAB simulation to study how geometry affects rotational stability and flight performance.
-    </p>
+    <p>Combined UWB tracking, prototyping, and MATLAB simulation to study how geometry affects rotational stability and flight performance.</p>
   </div>
 
   <div class="work-item">
     <h3><a href="/robotic-lift">Robotic Lift Mechanism</a></h3>
-    <p>
-      Developed a compact lifting robot with a four-bar linkage, torque-enhancing drivetrain, and laser-cut structural components.
-    </p>
+    <p>Developed a compact lifting robot with a four-bar linkage, torque-enhancing drivetrain, and laser-cut structural components.</p>
   </div>
 
   <div class="work-item">
     <h3><a href="/xtreme-materials">Xtreme Materials Laboratory</a></h3>
-    <p>
-      Synthesized carbon-lithium composite materials through controlled solvothermal processing, purification, and validation workflows.
-    </p>
+    <p>Synthesized carbon-lithium composite materials through controlled solvothermal processing, purification, and validation workflows.</p>
   </div>
 </section>
 
