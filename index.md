@@ -94,7 +94,7 @@ title: Home
 </section>
 
 <section class="founder-section">
-  <h2 class="founder-heading">Meet the Founder</h2>
+  <h2 class="founder-heading">Who’s Behind This</h2>
 
   <div class="founder-card">
     <div class="founder-photo-wrap">
