@@ -427,19 +427,42 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Section titles: Challenge / Solution / Result */
 .project-detail h2 {
   margin-top: 42px;
   margin-bottom: 12px;
   font-size: 1.05rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #b5b5c8;
+  color: #ffa62b;
+  text-shadow: 0 0 10px rgba(255, 166, 43, 0.25);
 }
 
+/* Content text */
+.project-detail p,
+.project-detail li {
+  color: #eef1f7;
+  line-height: 1.7;
+}
+
+/* Bold highlights */
+.project-detail strong,
+.project-detail b {
+  color: #8a63ff;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(138, 99, 255, 0.25);
+}
+
+/* Lists */
 .project-detail ul {
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
+.project-detail li {
+  margin-bottom: 8px;
+}
+
+/* Images */
 .project-detail figure {
   margin: 42px 0;
 }
