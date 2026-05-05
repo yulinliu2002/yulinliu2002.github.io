@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cellxercise — Jason Liu</title>
+  <meta name="description" content="A closed-loop bioreactor that replicates physiologically-relevant tensile conditions for tissue growth.">
+  <meta name="theme-color" content="#0E0E10">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..500;1,9..144,400..500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <header class="nav" role="banner">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="/">Jason Liu</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/#work">Work</a>
+        <a href="/#beyond">Beyond</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <button class="nav__menu" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="proj">
+
+    <div class="proj__topbar">
+      <div class="wrap">
+        <a class="proj__back" href="/#work"><span class="arrow" aria-hidden="true">←</span> Back to work</a>
+      </div>
+    </div>
+
+    <article>
+      <header class="wrap proj__title-block">
+        <div class="proj__eyebrow">Biomechanics / Controls · Jan 2025 – Present</div>
+        <h1 class="proj__title">Cellxercise</h1>
+        <p class="proj__lede">A closed-loop bioreactor that replicates physiologically-relevant tensile conditions for tissue growth.</p>
+      </header>
+
+      <div class="wrap">
+        <figure class="proj__hero">
+          <img src="/images/SeniorDesign/Assembly.jpg" alt="Cellxercise bioreactor assembly" loading="eager" decoding="async">
+        </figure>
+      </div>
+
+      <div class="wrap proj__article">
+
+        <h2 class="proj__h2"><span class="num">01 — Context</span>Tissue grown in static culture doesn't behave like tissue in the body.</h2>
+        <p>To study how cells respond under realistic mechanical conditions — tendons, ligaments, vasculature, anywhere the body cycles tension — the culture itself has to cycle. Cellxercise is the platform that does that, with the precision and sterility a wet-lab actually requires.</p>
+
+        <h2 class="proj__h2"><span class="num">02 — Constraints</span>Sub-millimeter precision, 1 Hz forever, autoclavable end-to-end.</h2>
+        <p>Closed-loop control had to hold a strain target across thousands of consecutive cycles without drift. Every part touching the culture — clamps, plates, fixtures — had to come out of an autoclave and go back in. And the actuator had to deliver real force (20 N) at biologically meaningful frequency, not a tabletop demo.</p>
+
+        <h2 class="proj__h2"><span class="num">03 — What I Built</span>Mechanics, controls, and machining, end to end.</h2>
+        <ul>
+          <li>Bioreactor delivering 20 N at 10% cyclic strain, 1 Hz.</li>
+          <li>LabVIEW closed-loop control with a SMAC actuator and ATO load cell.</li>
+          <li>Sterilizable steel clamps and aluminum lift plates — designed in CAD, programmed in MasterCAM, machined on a HAAS CNC, and waterjetted on a WARDJet.</li>
+        </ul>
+
+        <h2 class="proj__h2"><span class="num">04 — Outcome</span>Holds the loop where it has to.</h2>
+        <p>Under continuous operation, the system hits 0.01 mm positioning resolution and 5 µm measurement accuracy — fine enough to control strain at the cellular length-scale that matters for tissue mechanics.</p>
+
+        <p class="proj__outlink">
+          <a class="link link--brass" href="https://sites.google.com/eng.ucsd.edu/mae156b-2025spring-team02/home" target="_blank" rel="noopener noreferrer">View project site →</a>
+        </p>
+
+        <div class="proj__metrics" aria-label="Key metrics">
+          <div class="metric">
+            <div class="metric__value"><em>0.01</em>mm</div>
+            <div class="metric__label">positioning resolution</div>
+          </div>
+          <div class="metric">
+            <div class="metric__value"><em>5</em>µm</div>
+            <div class="metric__label">measurement accuracy</div>
+          </div>
+          <div class="metric">
+            <div class="metric__value"><em>20</em>N</div>
+            <div class="metric__label">cyclic load</div>
+          </div>
+          <div class="metric">
+            <div class="metric__value"><em>1</em>Hz</div>
+            <div class="metric__label">cycle rate</div>
+          </div>
+          <div class="metric">
+            <div class="metric__value"><em>10</em>%</div>
+            <div class="metric__label">cyclic strain</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="wrap proj__gallery" aria-label="Project images">
+        <figure>
+          <img src="/images/SeniorDesign/CAD.jpg" alt="Cellxercise CAD model" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <div class="wrap proj__next">
+        <span class="proj__next-label">Next</span>
+        <a class="proj__next-link" href="/work/autonomous-vehicle.html">TranquiBot <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="wrap footer__row">
+      <div>Jason Liu <em>·</em> San Francisco <em>·</em> MMXXVI</div>
+      <div>Built by hand · 2026</div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

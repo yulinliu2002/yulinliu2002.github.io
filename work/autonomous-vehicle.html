@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TranquiBot — Jason Liu</title>
+  <meta name="description" content="A Jetson Nano-based autonomous platform fusing depth, LiDAR, and GPS with LLM-driven high-level decisions.">
+  <meta name="theme-color" content="#0E0E10">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..500;1,9..144,400..500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <header class="nav" role="banner">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="/">Jason Liu</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/#work">Work</a>
+        <a href="/#beyond">Beyond</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <button class="nav__menu" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="proj">
+
+    <div class="proj__topbar">
+      <div class="wrap">
+        <a class="proj__back" href="/#work"><span class="arrow" aria-hidden="true">←</span> Back to work</a>
+      </div>
+    </div>
+
+    <article>
+      <header class="wrap proj__title-block">
+        <div class="proj__eyebrow">Robotics / Perception · Jan 2024 – Present</div>
+        <h1 class="proj__title">TranquiBot</h1>
+        <p class="proj__lede">A Jetson Nano-based autonomous platform fusing depth, LiDAR, and GPS with LLM-driven high-level decisions.</p>
+      </header>
+
+      <div class="wrap">
+        <figure class="proj__hero">
+          <img src="/images/AutoCar/Autocar_new.JPG" alt="TranquiBot autonomous vehicle platform" loading="eager" decoding="async">
+        </figure>
+      </div>
+
+      <div class="wrap proj__article">
+
+        <h2 class="proj__h2"><span class="num">01 — Context</span>A research-grade test bed, not a single-task vehicle.</h2>
+        <p>TranquiBot was built to fuse multiple sensor modalities and put a large language model inside the autonomy loop — not for one specific task, but as a flexible platform for perception and decision-making experiments. The hardware is generic enough to repurpose; the value is in how the layers talk to each other.</p>
+
+        <h2 class="proj__h2"><span class="num">02 — Constraints</span>Edge compute, multimodal fusion, and LLMs in the loop.</h2>
+        <p>Everything runs on a Jetson Nano. That means real-time fusion across LiDAR, depth, and GPS at edge throughput — and an LLM whose latency has to fit inside a control loop the platform can still react with.</p>
+
+        <h2 class="proj__h2"><span class="num">03 — What I Built</span>Stack from sensors to high-level decisions.</h2>
+        <ul>
+          <li>Embedded architecture: Jetson Nano + OAK-D depth + LD06 LiDAR + Point One Fusion Engine GPS.</li>
+          <li>Stack: ROS2 + DonkeyCar framework.</li>
+          <li>Perception: OpenCV + TensorFlow inference for lane detection and waypoint generation.</li>
+          <li>Autonomy: ChatGPT API for high-level decisions, ROS2/Python middleware, VESC motor control.</li>
+        </ul>
+
+        <h2 class="proj__h2"><span class="num">04 — Outcome</span>End-to-end autonomy on multimodal sensor inputs.</h2>
+        <p>The platform performs real-time autonomous navigation, drawing on every sensor in the stack and routing high-level decisions through the LLM layer.</p>
+
+        <p class="proj__outlink">
+          <a class="link link--brass" href="https://github.com/JL2200/mae148_group8" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+        </p>
+
+        <div class="proj__stack" aria-label="Sensor and compute stack">
+          <span>Jetson Nano</span><i>·</i>
+          <span>OAK-D Depth</span><i>·</i>
+          <span>LD06 LiDAR</span><i>·</i>
+          <span>Point One GPS</span><i>·</i>
+          <span>ROS2 / DonkeyCar</span>
+        </div>
+
+      </div>
+
+      <div class="wrap proj__gallery" aria-label="Project images">
+        <figure>
+          <img src="/images/AutoCar/group photo.jpg" alt="TranquiBot team and platform" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <div class="wrap proj__next">
+        <span class="proj__next-label">Next</span>
+        <a class="proj__next-link" href="/work/boomerang.html">Boomerang Aerodynamics <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="wrap footer__row">
+      <div>Jason Liu <em>·</em> San Francisco <em>·</em> MMXXVI</div>
+      <div>Built by hand · 2026</div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boomerang Aerodynamics — Jason Liu</title>
+  <meta name="description" content="An AIAA-published study on wing-tip deflection effects on flight stability, validated with UWB tracking.">
+  <meta name="theme-color" content="#0E0E10">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..500;1,9..144,400..500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+  <header class="nav" role="banner">
+    <div class="wrap nav__inner">
+      <a class="nav__brand" href="/">Jason Liu</a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="/#work">Work</a>
+        <a href="/#beyond">Beyond</a>
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+      <button class="nav__menu" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="proj">
+
+    <div class="proj__topbar">
+      <div class="wrap">
+        <a class="proj__back" href="/#work"><span class="arrow" aria-hidden="true">←</span> Back to work</a>
+      </div>
+    </div>
+
+    <article>
+      <header class="wrap proj__title-block">
+        <div class="proj__eyebrow">Research / Aerodynamics · Feb 2023 – Jun 2024</div>
+        <h1 class="proj__title">Boomerang Aerodynamics</h1>
+        <p class="proj__lede">An AIAA-published study on wing-tip deflection effects on flight stability, validated with UWB tracking.</p>
+      </header>
+
+      <div class="wrap">
+        <figure class="proj__hero">
+          <img src="/images/Boomerang/boomerang%20prototype.png" alt="Boomerang prototype with sensor mount" loading="eager" decoding="async">
+        </figure>
+      </div>
+
+      <div class="wrap proj__article">
+
+        <h2 class="proj__h2"><span class="num">01 — Context</span>What does bending the wing tips do to flight?</h2>
+        <p>The Boomerang Research Lab studied joint-angle effects on flight stability — pairing simulation with field-measured data. The question is narrow but the methodology has to be careful: simulation only matters if you can measure something to verify it.</p>
+
+        <h2 class="proj__h2"><span class="num">02 — Constraints</span>Outdoor experiments are noisy.</h2>
+        <p>Wind, throw variance, and tracking-rig calibration all show up in the data. Every trial has to either control for them or account for them. And every joint-angle configuration needs enough repetitions to separate the signal from the throw.</p>
+
+        <h2 class="proj__h2"><span class="num">03 — What I Built</span>Paper, models, instrumentation, field work.</h2>
+        <ul>
+          <li>Co-authored AIAA paper on wing-tip deflection.</li>
+          <li>MATLAB airflow models paired with UWB tracking algorithms for trajectory capture.</li>
+          <li>15+ field trials across six joint angles, in low-wind conditions for measurement fidelity.</li>
+        </ul>
+
+        <h2 class="proj__h2"><span class="num">04 — Outcome</span>Measurements validated the simulation.</h2>
+        <p>Experimental data confirmed simulation predictions for joint-angle effects on stability — closing the loop between aero model and physical flight.</p>
+
+        <div class="proj__metrics" aria-label="Key metrics">
+          <div class="metric">
+            <div class="metric__value"><em>6</em></div>
+            <div class="metric__label">joint angles tested</div>
+          </div>
+          <div class="metric">
+            <div class="metric__value"><em>15</em>+</div>
+            <div class="metric__label">field trials</div>
+          </div>
+          <div class="metric">
+            <div class="metric__value"><em>AIAA</em></div>
+            <div class="metric__label">publication</div>
+          </div>
+          <div class="metric">
+            <div class="metric__value"><em>UWB</em></div>
+            <div class="metric__label">trajectory tracking</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="wrap proj__gallery" aria-label="Project images">
+        <figure>
+          <img src="/images/Boomerang/Simulation.png" alt="Aerodynamic simulation visualisation" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="/images/Boomerang/UWB.png" alt="UWB tracking setup" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="/images/Boomerang/3D%20Printer.png" alt="3D-printed boomerang components" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="/images/Boomerang/Drone%20Controller.png" alt="Drone-style controller used in tracking" loading="lazy" decoding="async">
+        </figure>
+        <figure>
+          <img src="/images/Boomerang/Group%20Photo.png" alt="Boomerang Research Lab team" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <div class="wrap proj__next">
+        <span class="proj__next-label">Next</span>
+        <a class="proj__next-link" href="/work/xtreme-materials.html">Xtreme Materials <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="wrap footer__row">
+      <div>Jason Liu <em>·</em> San Francisco <em>·</em> MMXXVI</div>
+      <div>Built by hand · 2026</div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
