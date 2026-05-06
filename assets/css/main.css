@@ -825,21 +825,33 @@ p { text-wrap: pretty; }
 }
 
 /* Music */
-.beyond__music-fig {
-  grid-column: 3 / span 9;
-  margin-bottom: var(--s-4);
+.beyond__main-fig {
+  grid-column: 3 / span 6;
   background: var(--ink-800);
   overflow: hidden;
   aspect-ratio: 3 / 4;
-  max-height: 86vh;
+  max-height: 80vh;
 }
-.beyond__music-fig img {
+.beyond__main-fig img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: saturate(0.88);
+  transition: filter 500ms var(--ease);
 }
-.beyond__music-text {
-  grid-column: 3 / span 6;
+.beyond__block:hover .beyond__main-fig img {
+  filter: saturate(1);
+}
+
+.beyond__side {
+  grid-column: 10 / span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--s-4);
+}
+
+.beyond__caption-text {
   font-family: var(--ff-display);
   font-weight: 400;
   font-size: var(--fs-h2);
@@ -847,7 +859,7 @@ p { text-wrap: pretty; }
   color: var(--paper-50);
   text-wrap: balance;
 }
-.beyond__music-text span {
+.beyond__caption-text span {
   display: block;
   margin-top: var(--s-2);
   font-family: var(--ff-mono);
@@ -856,18 +868,25 @@ p { text-wrap: pretty; }
   letter-spacing: 0.04em;
   color: var(--paper-300);
 }
-.beyond__music-rehearsal {
-  grid-column: 10 / span 3;
+
+.beyond__side-fig {
   background: var(--ink-800);
   overflow: hidden;
   aspect-ratio: 4 / 3;
-  align-self: end;
 }
-.beyond__music-rehearsal img {
+.beyond__side-fig img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: saturate(0.85);
+}
+.beyond__side-fig figcaption {
+  margin-top: var(--s-1);
+  font-family: var(--ff-mono);
+  font-size: var(--fs-tiny);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--paper-500);
 }
 
 /* Languages */
@@ -936,14 +955,14 @@ p { text-wrap: pretty; }
 @media (max-width: 900px) {
   .beyond__intro p { grid-column: 1 / -1; }
   .beyond__label { grid-column: 1 / -1; margin-bottom: var(--s-2); }
-  .beyond__music-fig,
-  .beyond__music-text,
-  .beyond__music-rehearsal,
+  .beyond__main-fig,
+  .beyond__side,
   .beyond__lang-display,
   .beyond__lang-note,
   .beyond__origin { grid-column: 1 / -1; }
-  .beyond__music-fig { aspect-ratio: 3 / 4; max-height: none; }
-  .beyond__music-rehearsal { max-width: 60%; margin-top: var(--s-3); }
+  .beyond__main-fig { aspect-ratio: 4 / 3; max-height: none; }
+  .beyond__side { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+  .beyond__side-fig { max-width: 55%; }
 }
 
 /* =========================================================================
